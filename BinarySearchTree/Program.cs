@@ -19,6 +19,8 @@
 
             Console.Write(CustomBstObj.Search(75));
 
+            CustomBstObj.PreOrder();
+            Console.WriteLine("--------");
         }
     }
 }
