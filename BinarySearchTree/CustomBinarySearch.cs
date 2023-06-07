@@ -104,6 +104,22 @@ namespace BinarySearchTree
                 PreOrderTraversal(node.Right);
             }
         }
-     }
+
+        public void InOrder()
+        {
+            InOrderTraversal(Root);
+        }
+
+        private void InOrderTraversal(Node node)
+        {
+            if (node != null)
+            {
+                InOrderTraversal(node.Left);
+                Console.Write($"{node.Data}");
+                InOrderTraversal(node.Right);
+            }
+        }
+
+    }
 }
 

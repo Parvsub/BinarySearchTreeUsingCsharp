@@ -21,6 +21,9 @@
 
             CustomBstObj.PreOrder();
             Console.WriteLine("--------");
+
+            CustomBstObj.InOrder();
+            Console.WriteLine("--------");
         }
     }
 }
