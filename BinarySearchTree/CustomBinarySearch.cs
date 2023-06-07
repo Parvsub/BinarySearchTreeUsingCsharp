@@ -90,52 +90,6 @@ namespace BinarySearchTree
 
             return false;
         }
-
-        public void PreOrder()
-        {
-            PreOrderTraversal(Root);
-        }
-
-        private void PreOrderTraversal(Node node)
-        {
-            if (node != null)
-            {
-                Console.Write($"{node.Data}");
-                PreOrderTraversal(node.Left);
-                PreOrderTraversal(node.Right);
-            }
-        }
-
-        public void InOrder()
-        {
-            InOrderTraversal(Root);
-        }
-
-        private void InOrderTraversal(Node node)
-        {
-            if (node != null)
-            {
-                InOrderTraversal(node.Left);
-                Console.Write($"{node.Data}");
-                InOrderTraversal(node.Right);
-            }
-        }
-
-        public void PostOrder()
-        {
-            PostOrder(Root);
-        }
-
-        private void PostOrder(Node node)
-        {
-            if (node != null)
-            {
-                PostOrder(node.Left);
-                PostOrder(node.Right);
-                Console.Write($"{node.Data}");
-            }
-        }
     }
 }
 
-   

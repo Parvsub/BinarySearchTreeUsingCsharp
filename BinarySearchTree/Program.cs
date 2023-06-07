@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            Console.Write("Welcome to BST Implementation");
             CustomBinarySearch CustomBstObj = new CustomBinarySearch();
             CustomBstObj.Add(10);
             CustomBstObj.Add(23);
@@ -18,15 +19,6 @@
 
             Console.Write(CustomBstObj.Search(75));
 
-            CustomBstObj.PreOrder();
-            Console.WriteLine("--------");
-
-            CustomBstObj.InOrder();
-            Console.WriteLine("--------");
-
-
-            CustomBstObj.PostOrder();
-            Console.WriteLine("--------");
-        } 
+        }
     }
 }
