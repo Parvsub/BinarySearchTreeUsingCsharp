@@ -119,7 +119,20 @@ namespace BinarySearchTree
                 InOrderTraversal(node.Right);
             }
         }
+        public void PostOrder()
+        {
+            PostOrder(Root);
+        }
 
+        private void PostOrder(Node node)
+        {
+            if (node != null)
+            {
+                PostOrder(node.Left);
+                PostOrder(node.Right);
+                Console.Write($"{node.Data}");
+            }
+        }
     }
 }
 
